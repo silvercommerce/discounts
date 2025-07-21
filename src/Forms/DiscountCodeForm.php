@@ -19,6 +19,8 @@ use SilverCommerce\ShoppingCart\ShoppingCartFactory;
  */
 class DiscountCodeForm extends Form
 {
+    const DEFAULT_NAME = "DiscountCodeForm";
+
     /**
      * ID of the estimate the discount will be applied to.
      *
@@ -27,9 +29,9 @@ class DiscountCodeForm extends Form
     protected $estimate_id;
 
     public function __construct(
-        RequestHandler $controller = null,
+        RequestHandler $controller,
+        Estimate $estimate,
         $name = self::DEFAULT_NAME,
-        Estimate $estimate
     ) {
         $this->estimate_id = $estimate->ID;
 

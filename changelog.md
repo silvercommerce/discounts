@@ -49,3 +49,8 @@
 ## 2.0.7
 
 * Ensure discounts clean up on deletion
+
+## 2.1.0
+
+* SS5 support
+* Adjustments for PHP8.* support
