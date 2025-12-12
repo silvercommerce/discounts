@@ -31,7 +31,7 @@ class DiscountCodeForm extends Form
     public function __construct(
         RequestHandler $controller,
         Estimate $estimate,
-        $name = self::DEFAULT_NAME,
+        $name = self::DEFAULT_NAME
     ) {
         $this->estimate_id = $estimate->ID;
 
